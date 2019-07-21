@@ -47,7 +47,7 @@ var cars= ['AMC Ambassador Brougham','BMW 2002','Cadillac Seville','Datsun 1200'
 var mpg= [13, 26, 16.5, 35, 12, 36, 30, 11, 39, 34.5, 32.3, 32, 29 ];
 var hp = [175, 113, 180, 69, 167, 75, 67, 180, 64, 100, 93, 96, 62];
 var mph = [11, 12.5, 12.1, 18, 12.5, 16, 21.8, 11, 16.4, 15.8, 17.8, 13.8, 14.7];
-document.getElementById("data").innerHTML = "MPG stands for Miles Per Gallon, which measures energy efficiency.";
+document.getElementById("data").innerHTML = "Horsepower measures how much power that an engine produces.";
 
 var xs= d3.scaleBand(cars).range(hp);
 var ys= d3.scaleLinear().domain([50, 200]).range([0, 300]);
@@ -75,11 +75,11 @@ d3.select(".chart")
 </script>
 
 <p>Please click on the bottom buttons to navigate through the scenes.</p>
-<h1>Please answer the following question: which brand of cars is most energy efficient?<h1>
-<button id= MQ onClick= myFunctionYes()>Plymouth Champ</button>
-<button id= AQ onClick= myFunctionNo1()>AMC Ambassador Brougham</button>
-<button id= JQ onClick= myFunctionNo2()>Datsun 1200</button>
-<button id = FQ onClick= myFunctionNo3()>Subaru</button>
+<h1>Please answer the following question: which brand of cars produces the most horsepower?<h1>
+<button id= MQ onClick= myFunctionNo1()>Ford Country</button>
+<button id= AQ onClick= myFunctionYes()>Oldsmobile Omega</button>
+<button id= JQ onClick= myFunctionNo2()>AMC Ambassafor Brougham</button>
+<button id = FQ onClick= myFunctionNo3()>Datsun 1200</button>
 <a href="https://marlesque.github.io/pizza.github.io/index.html">Energy Efficiency</a>
 <a href="https://marlesque.github.io/sample7.html/index.html">Speed in Miles Per Hour</a>
 <script>
